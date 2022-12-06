@@ -491,6 +491,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@edgedb/generate@npm:^0.0.6":
+  version: 0.0.6
+  resolution: "@edgedb/generate@npm:0.0.6"
+  dependencies:
+    chokidar: ^3.5.3
+  peerDependencies:
+    edgedb: ^1.0.0-alpha.0
+  bin:
+    generate: dist/cli.js
+  checksum: 15174d4638735bf703ed9bdb22ee039370999c3854fa05a74cdd03364b3a2de838c1602b603965c27030cf79c440213f001354050d19509e15e87a80a6e5d4f7
+  languageName: node
+  linkType: hard
+
 "@eslint/eslintrc@npm:^1.3.3":
   version: 1.3.3
   resolution: "@eslint/eslintrc@npm:1.3.3"
@@ -2039,6 +2052,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "backend@workspace:packages/backend"
   dependencies:
+    "@edgedb/generate": ^0.0.6
     "@nestjs/cli": ^9.0.0
     "@nestjs/common": ^9.0.0
     "@nestjs/core": ^9.0.0
@@ -2051,10 +2065,12 @@ __metadata:
     "@types/supertest": ^2.0.11
     "@typescript-eslint/eslint-plugin": ^5.0.0
     "@typescript-eslint/parser": ^5.0.0
+    edgedb: ^1.0.2
     eslint: ^8.0.1
     eslint-config-prettier: ^8.3.0
     eslint-plugin-prettier: ^4.0.0
     jest: 28.1.3
+    json5: ^2.2.1
     prettier: ^2.3.2
     reflect-metadata: ^0.1.13
     rimraf: ^3.0.2
@@ -2773,6 +2789,15 @@ __metadata:
   dependencies:
     esutils: ^2.0.2
   checksum: fd7673ca77fe26cd5cba38d816bc72d641f500f1f9b25b83e8ce28827fe2da7ad583a8da26ab6af85f834138cf8dae9f69b0cd6ab925f52ddab1754db44d99ce
+  languageName: node
+  linkType: hard
+
+"edgedb@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "edgedb@npm:1.0.2"
+  bin:
+    edgeql-js: dist/cli.js
+  checksum: 619691df265d48c74b47088adfde61a0c4a30bc52f72affb128c19fbf8d26a656603fa05b4b4755659e2729a9d1e8c2033603f4838f80dfd2699652ec38a6902
   languageName: node
   linkType: hard
 

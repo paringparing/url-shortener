@@ -927,6 +927,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@edgedb/generate", [\
+        ["npm:0.0.6", {\
+          "packageLocation": "./.yarn/cache/@edgedb-generate-npm-0.0.6-fb5b8c10c6-15174d4638.zip/node_modules/@edgedb/generate/",\
+          "packageDependencies": [\
+            ["@edgedb/generate", "npm:0.0.6"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:0.0.6", {\
+          "packageLocation": "./.yarn/__virtual__/@edgedb-generate-virtual-2b0ffb0eef/0/cache/@edgedb-generate-npm-0.0.6-fb5b8c10c6-15174d4638.zip/node_modules/@edgedb/generate/",\
+          "packageDependencies": [\
+            ["@edgedb/generate", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:0.0.6"],\
+            ["@types/edgedb", null],\
+            ["chokidar", "npm:3.5.3"],\
+            ["edgedb", "npm:1.0.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/edgedb",\
+            "edgedb"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@eslint/eslintrc", [\
         ["npm:1.3.3", {\
           "packageLocation": "./.yarn/cache/@eslint-eslintrc-npm-1.3.3-9e3a462140-f03e9d6727.zip/node_modules/@eslint/eslintrc/",\
@@ -2923,6 +2946,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/backend/",\
           "packageDependencies": [\
             ["backend", "workspace:packages/backend"],\
+            ["@edgedb/generate", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:0.0.6"],\
             ["@nestjs/cli", "npm:9.1.5"],\
             ["@nestjs/common", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:9.2.1"],\
             ["@nestjs/core", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:9.2.1"],\
@@ -2935,10 +2959,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/supertest", "npm:2.0.12"],\
             ["@typescript-eslint/eslint-plugin", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:5.45.0"],\
             ["@typescript-eslint/parser", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:5.45.0"],\
+            ["edgedb", "npm:1.0.2"],\
             ["eslint", "npm:8.29.0"],\
             ["eslint-config-prettier", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:8.5.0"],\
             ["eslint-plugin-prettier", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:4.2.1"],\
             ["jest", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:28.1.3"],\
+            ["json5", "npm:2.2.1"],\
             ["prettier", "npm:2.8.0"],\
             ["reflect-metadata", "npm:0.1.13"],\
             ["rimraf", "npm:3.0.2"],\
@@ -3781,6 +3807,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["doctrine", "npm:3.0.0"],\
             ["esutils", "npm:2.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["edgedb", [\
+        ["npm:1.0.2", {\
+          "packageLocation": "./.yarn/cache/edgedb-npm-1.0.2-83cb06faa8-619691df26.zip/node_modules/edgedb/",\
+          "packageDependencies": [\
+            ["edgedb", "npm:1.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\
