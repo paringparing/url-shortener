@@ -48,6 +48,13 @@ describe('UrlsService', () => {
     )
   })
 
+  it('should find url', async () => {
+    await expect(service.findUrlBySlug(slug)).resolves.toEqual({
+      slug,
+      url: 'https://google.com',
+    })
+  })
+
   it('should delete url', async () => {
     await expect(service.deleteUrl(slug)).resolves
   })
