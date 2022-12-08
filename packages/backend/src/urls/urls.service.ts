@@ -52,6 +52,10 @@ export class UrlsService {
     }
   }
 
+  /**
+   * Deletes a shortened url
+   * @param slug The slug of link to delete
+   */
   async deleteUrl(slug: string): Promise<void> {
     const deleted = await deleteUrl(this.db, { slug })
 
