@@ -46,7 +46,7 @@ describe('UsersService', () => {
     expect(userId).toBeDefined()
   })
 
-  it('find an undefined user', async () => {
+  it('find a user', async () => {
     await expect(service.findUserById(userId)).resolves.toEqual({
       id: '-1',
       username: 'Test User',

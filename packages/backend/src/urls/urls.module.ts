@@ -5,5 +5,6 @@ import { UrlsService } from './urls.service'
 @Module({
   providers: [UrlsService],
   imports: [DatabaseModule],
+  exports: [UrlsService],
 })
 export class UrlsModule {}
