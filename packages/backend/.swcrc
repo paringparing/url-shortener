@@ -1,0 +1,20 @@
+{
+  "jsc": {
+    "baseUrl": "./src",
+    "paths": {
+      "src/*": ["./*"]
+    },
+    "transform": {
+      "decoratorMetadata": true
+    },
+    "target": "es2017",
+    "parser": {
+      "syntax": "typescript",
+      "decorators": true
+    }
+  },
+  "module": {
+    "type": "commonjs"
+  },
+  "minify": false
+}
