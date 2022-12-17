@@ -12,5 +12,8 @@
   "scripts": {
     "dev": "yarn workspaces foreach -pi run dev",
     "test": "yarn workspaces foreach -i run test"
+  },
+  "dependencies": {
+    "@fastify/static": "^6.6.0"
   }
 }
