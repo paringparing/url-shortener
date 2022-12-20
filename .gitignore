@@ -11,3 +11,5 @@
 #.pnp.*
 
 /config.json
+
+.idea
