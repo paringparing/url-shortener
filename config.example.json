@@ -1,5 +1,13 @@
 {
   "database": {
     "host": "localhost"
+  },
+  "auth": {
+    "discord": {
+      "clientId": "",
+      "clientSecret": "",
+      "redirectUri": ""
+    },
+    "secret": ""
   }
 }

@@ -54,6 +54,16 @@ describe('UsersService', () => {
     })
   })
 
+  it('change username', async () => {
+    await expect(service.changeUsername(userId, 'Test User!')).resolves.toEqual(
+      {
+        id: '-1',
+        username: 'Test User!',
+        admin: false,
+      },
+    )
+  })
+
   it('delete a user', async () => {
     await expect(service.deleteUser(userId)).resolves.toBeUndefined()
   })

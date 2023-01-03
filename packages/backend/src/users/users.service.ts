@@ -5,6 +5,7 @@ import { createUser } from './queries/createUser.edgeql'
 import { deleteUser } from './queries/deleteUser.edgeql'
 import { findUserById } from './queries/findUserById.edgeql'
 import { User } from './types'
+import { changeUsername } from './queries/changeUsername.edgeql'
 
 @Injectable()
 export class UsersService {
@@ -13,9 +14,8 @@ export class UsersService {
   /**
    * Finds a user by id
    * @param id id of the user to find
-   * @returns {User}
    */
-  async findUserById(id: string): Promise<User | null> {
+  async findUserById(id: string): Promise<User> {
     const u = await findUserById(this.db, { userId: id })
 
     if (!u) throw new NotFoundException('User not found')
@@ -27,7 +27,6 @@ export class UsersService {
    * Creates a user
    * @param id the id to use for the user
    * @param username the username to set for the user
-   * @returns {User}
    */
   async createUser(id: string, username: string): Promise<User> {
     const u = await createUser(this.db, {
@@ -39,9 +38,25 @@ export class UsersService {
   }
 
   /**
+   * Changes username for a user
+   * @param id the id of user to change username
+   * @param username the username to change for the user
+   */
+  async changeUsername(id: string, username: string): Promise<User> {
+    await this.findUserById(id) // check if user exists
+
+    const user = await changeUsername(this.db, { id, username })
+
+    return {
+      id: user.userId,
+      admin: user.admin,
+      username: user.username,
+    }
+  }
+
+  /**
    * Deletes a user
    * @param id the user id to delete
-   * @returns {string}
    */
   async deleteUser(id: string): Promise<void> {
     const deleted = await deleteUser(this.db, { userId: id })
