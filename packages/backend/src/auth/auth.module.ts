@@ -10,6 +10,9 @@ import { config } from 'src/utils/config'
     UsersModule,
     JwtModule.register({
       secret: config.auth.secret,
+      signOptions: {
+        expiresIn: '7d',
+      },
     }),
   ],
   providers: [AuthService],
