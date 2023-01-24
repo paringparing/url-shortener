@@ -385,10 +385,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "npm:4.1.0"\
       ],\
       [\
-        "@fastify/flash",\
-        "npm:5.1.0"\
-      ],\
-      [\
         "@fastify/formbody",\
         "npm:7.3.0"\
       ],\
@@ -559,10 +555,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       [\
         "@nestjs/core",\
         "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:9.2.1"\
-      ],\
-      [\
-        "@nestjs/passport",\
-        "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:9.0.0"\
       ],\
       [\
         "@nestjs/platform-express",\
@@ -781,24 +773,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "npm:16.18.4"\
       ],\
       [\
-        "@types/oauth",\
-        "npm:0.9.1"\
-      ],\
-      [\
         "@types/parse-json",\
         "npm:4.0.0"\
-      ],\
-      [\
-        "@types/passport",\
-        "npm:1.0.11"\
-      ],\
-      [\
-        "@types/passport-discord",\
-        "npm:0.1.6"\
-      ],\
-      [\
-        "@types/passport-oauth2",\
-        "npm:1.4.11"\
       ],\
       [\
         "@types/prettier",\
@@ -1131,10 +1107,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       [\
         "base64-js",\
         "npm:1.5.1"\
-      ],\
-      [\
-        "base64url",\
-        "npm:3.0.1"\
       ],\
       [\
         "binary-extensions",\
@@ -2357,10 +2329,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "npm:6.0.2"\
       ],\
       [\
-        "oauth",\
-        "npm:0.9.15"\
-      ],\
-      [\
         "object-assign",\
         "npm:4.1.1"\
       ],\
@@ -2435,25 +2403,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       [\
         "parseurl",\
         "npm:1.3.3"\
-      ],\
-      [\
-        "passport",\
-        [\
-          "@fastify/passport",\
-          "npm:2.2.0"\
-        ]\
-      ],\
-      [\
-        "passport-discord",\
-        "npm:0.1.4"\
-      ],\
-      [\
-        "passport-oauth2",\
-        "npm:1.6.1"\
-      ],\
-      [\
-        "passport-strategy",\
-        "npm:1.0.0"\
       ],\
       [\
         "path-exists",\
@@ -3030,10 +2979,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       [\
         "typescript",\
         "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"\
-      ],\
-      [\
-        "uid2",\
-        "npm:0.0.4"\
       ],\
       [\
         "unique-filename",\
@@ -4645,16 +4590,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["@fastify/flash", [\
-        ["npm:5.1.0", {\
-          "packageLocation": "./.yarn/cache/@fastify-flash-npm-5.1.0-8e30ff8c6a-5aeff7a229.zip/node_modules/@fastify/flash/",\
-          "packageDependencies": [\
-            ["@fastify/flash", "npm:5.1.0"],\
-            ["fastify-plugin", "npm:4.4.0"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["@fastify/formbody", [\
         ["npm:7.3.0", {\
           "packageLocation": "./.yarn/cache/@fastify-formbody-npm-7.3.0-f510eb1e03-2b8336c063.zip/node_modules/@fastify/formbody/",\
@@ -4674,17 +4609,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fastify-plugin", "npm:3.0.1"],\
             ["path-to-regexp", "npm:6.2.1"],\
             ["reusify", "npm:1.0.4"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["@fastify/passport", [\
-        ["npm:2.2.0", {\
-          "packageLocation": "./.yarn/cache/@fastify-passport-npm-2.2.0-8128ce2c3c-8add9da301.zip/node_modules/@fastify/passport/",\
-          "packageDependencies": [\
-            ["@fastify/passport", "npm:2.2.0"],\
-            ["@fastify/flash", "npm:5.1.0"],\
-            ["fastify-plugin", "npm:4.4.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5656,35 +5580,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["@nestjs/passport", [\
-        ["npm:9.0.0", {\
-          "packageLocation": "./.yarn/cache/@nestjs-passport-npm-9.0.0-21a609d0dc-85651ed1f6.zip/node_modules/@nestjs/passport/",\
-          "packageDependencies": [\
-            ["@nestjs/passport", "npm:9.0.0"]\
-          ],\
-          "linkType": "SOFT"\
-        }],\
-        ["virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:9.0.0", {\
-          "packageLocation": "./.yarn/__virtual__/@nestjs-passport-virtual-d3668c7fd5/0/cache/@nestjs-passport-npm-9.0.0-21a609d0dc-85651ed1f6.zip/node_modules/@nestjs/passport/",\
-          "packageDependencies": [\
-            ["@nestjs/passport", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:9.0.0"],\
-            ["@nestjs/common", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:9.2.1"],\
-            ["@types/nestjs__common", null],\
-            ["@types/passport", null],\
-            ["passport", [\
-              "@fastify/passport",\
-              "npm:2.2.0"\
-            ]]\
-          ],\
-          "packagePeers": [\
-            "@nestjs/common",\
-            "@types/nestjs__common",\
-            "@types/passport",\
-            "passport"\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["@nestjs/platform-express", [\
         ["npm:9.2.1", {\
           "packageLocation": "./.yarn/cache/@nestjs-platform-express-npm-9.2.1-73cc8ed19b-a20d5471b1.zip/node_modules/@nestjs/platform-express/",\
@@ -6308,17 +6203,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/serve-static", "npm:1.15.0"]\
           ],\
           "linkType": "HARD"\
-        }],\
-        ["npm:4.17.15", {\
-          "packageLocation": "./.yarn/cache/@types-express-npm-4.17.15-f269888d96-b4acd8a836.zip/node_modules/@types/express/",\
-          "packageDependencies": [\
-            ["@types/express", "npm:4.17.15"],\
-            ["@types/body-parser", "npm:1.19.2"],\
-            ["@types/express-serve-static-core", "npm:4.17.32"],\
-            ["@types/qs", "npm:6.9.7"],\
-            ["@types/serve-static", "npm:1.15.0"]\
-          ],\
-          "linkType": "HARD"\
         }]\
       ]],\
       ["@types/express-serve-static-core", [\
@@ -6326,16 +6210,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-express-serve-static-core-npm-4.17.31-846873f446-009bfbe107.zip/node_modules/@types/express-serve-static-core/",\
           "packageDependencies": [\
             ["@types/express-serve-static-core", "npm:4.17.31"],\
-            ["@types/node", "npm:18.11.10"],\
-            ["@types/qs", "npm:6.9.7"],\
-            ["@types/range-parser", "npm:1.2.4"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:4.17.32", {\
-          "packageLocation": "./.yarn/cache/@types-express-serve-static-core-npm-4.17.32-df32b83158-70ec1b8f38.zip/node_modules/@types/express-serve-static-core/",\
-          "packageDependencies": [\
-            ["@types/express-serve-static-core", "npm:4.17.32"],\
             ["@types/node", "npm:18.11.10"],\
             ["@types/qs", "npm:6.9.7"],\
             ["@types/range-parser", "npm:1.2.4"]\
@@ -6427,55 +6301,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["@types/oauth", [\
-        ["npm:0.9.1", {\
-          "packageLocation": "./.yarn/cache/@types-oauth-npm-0.9.1-94ae218a9b-5c079611b4.zip/node_modules/@types/oauth/",\
-          "packageDependencies": [\
-            ["@types/oauth", "npm:0.9.1"],\
-            ["@types/node", "npm:18.11.10"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["@types/parse-json", [\
         ["npm:4.0.0", {\
           "packageLocation": "./.yarn/cache/@types-parse-json-npm-4.0.0-298522afa6-fd6bce2b67.zip/node_modules/@types/parse-json/",\
           "packageDependencies": [\
             ["@types/parse-json", "npm:4.0.0"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["@types/passport", [\
-        ["npm:1.0.11", {\
-          "packageLocation": "./.yarn/cache/@types-passport-npm-1.0.11-691a505ef6-7fea92aeb0.zip/node_modules/@types/passport/",\
-          "packageDependencies": [\
-            ["@types/passport", "npm:1.0.11"],\
-            ["@types/express", "npm:4.17.15"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["@types/passport-discord", [\
-        ["npm:0.1.6", {\
-          "packageLocation": "./.yarn/cache/@types-passport-discord-npm-0.1.6-e9eef88ef6-6520245642.zip/node_modules/@types/passport-discord/",\
-          "packageDependencies": [\
-            ["@types/passport-discord", "npm:0.1.6"],\
-            ["@types/express", "npm:4.17.15"],\
-            ["@types/passport", "npm:1.0.11"],\
-            ["@types/passport-oauth2", "npm:1.4.11"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["@types/passport-oauth2", [\
-        ["npm:1.4.11", {\
-          "packageLocation": "./.yarn/cache/@types-passport-oauth2-npm-1.4.11-299820231e-09d047a6c0.zip/node_modules/@types/passport-oauth2/",\
-          "packageDependencies": [\
-            ["@types/passport-oauth2", "npm:1.4.11"],\
-            ["@types/express", "npm:4.17.15"],\
-            ["@types/oauth", "npm:0.9.1"],\
-            ["@types/passport", "npm:1.0.11"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7657,7 +7487,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/cli", "npm:9.1.5"],\
             ["@nestjs/common", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:9.2.1"],\
             ["@nestjs/core", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:9.2.1"],\
-            ["@nestjs/passport", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:9.0.0"],\
             ["@nestjs/platform-express", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:9.2.1"],\
             ["@nestjs/platform-fastify", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:9.2.1"],\
             ["@nestjs/schematics", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:9.0.3"],\
@@ -7669,7 +7498,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/express", "npm:4.17.14"],\
             ["@types/jest", "npm:28.1.8"],\
             ["@types/node", "npm:16.18.4"],\
-            ["@types/passport-discord", "npm:0.1.6"],\
             ["@types/supertest", "npm:2.0.12"],\
             ["@typescript-eslint/eslint-plugin", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:5.45.0"],\
             ["@typescript-eslint/parser", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:5.45.0"],\
@@ -7682,11 +7510,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fastify", "npm:4.11.0"],\
             ["jest", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:28.1.3"],\
             ["json5", "npm:2.2.1"],\
-            ["passport", [\
-              "@fastify/passport",\
-              "npm:2.2.0"\
-            ]],\
-            ["passport-discord", "npm:0.1.4"],\
             ["prettier", "npm:2.8.0"],\
             ["reflect-metadata", "npm:0.1.13"],\
             ["rimraf", "npm:3.0.2"],\
@@ -7716,15 +7539,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/base64-js-npm-1.5.1-b2f7275641-669632eb37.zip/node_modules/base64-js/",\
           "packageDependencies": [\
             ["base64-js", "npm:1.5.1"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["base64url", [\
-        ["npm:3.0.1", {\
-          "packageLocation": "./.yarn/cache/base64url-npm-3.0.1-4c171c4917-a77b2a3a52.zip/node_modules/base64url/",\
-          "packageDependencies": [\
-            ["base64url", "npm:3.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -11695,15 +11509,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["oauth", [\
-        ["npm:0.9.15", {\
-          "packageLocation": "./.yarn/cache/oauth-npm-0.9.15-a6aae972bc-957c0d8d85.zip/node_modules/oauth/",\
-          "packageDependencies": [\
-            ["oauth", "npm:0.9.15"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["object-assign", [\
         ["npm:4.1.1", {\
           "packageLocation": "./.yarn/cache/object-assign-npm-4.1.1-1004ad6dec-fcc6e4ea8c.zip/node_modules/object-assign/",\
@@ -11915,39 +11720,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/parseurl-npm-1.3.3-1542397e00-407cee8e0a.zip/node_modules/parseurl/",\
           "packageDependencies": [\
             ["parseurl", "npm:1.3.3"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["passport-discord", [\
-        ["npm:0.1.4", {\
-          "packageLocation": "./.yarn/cache/passport-discord-npm-0.1.4-53e9b155db-81c0a7f45d.zip/node_modules/passport-discord/",\
-          "packageDependencies": [\
-            ["passport-discord", "npm:0.1.4"],\
-            ["passport-oauth2", "npm:1.6.1"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["passport-oauth2", [\
-        ["npm:1.6.1", {\
-          "packageLocation": "./.yarn/cache/passport-oauth2-npm-1.6.1-2799fe66c7-2a5b01a884.zip/node_modules/passport-oauth2/",\
-          "packageDependencies": [\
-            ["passport-oauth2", "npm:1.6.1"],\
-            ["base64url", "npm:3.0.1"],\
-            ["oauth", "npm:0.9.15"],\
-            ["passport-strategy", "npm:1.0.0"],\
-            ["uid2", "npm:0.0.4"],\
-            ["utils-merge", "npm:1.0.1"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["passport-strategy", [\
-        ["npm:1.0.0", {\
-          "packageLocation": "./.yarn/cache/passport-strategy-npm-1.0.0-5648a82a66-5086693f25.zip/node_modules/passport-strategy/",\
-          "packageDependencies": [\
-            ["passport-strategy", "npm:1.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -13794,15 +13566,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/typescript-patch-b9b216bc0d-67ca21a387.zip/node_modules/typescript/",\
           "packageDependencies": [\
             ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["uid2", [\
-        ["npm:0.0.4", {\
-          "packageLocation": "./.yarn/cache/uid2-npm-0.0.4-cd02831b83-e92325ce2e.zip/node_modules/uid2/",\
-          "packageDependencies": [\
-            ["uid2", "npm:0.0.4"]\
           ],\
           "linkType": "HARD"\
         }]\
