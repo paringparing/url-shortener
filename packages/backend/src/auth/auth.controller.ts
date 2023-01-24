@@ -7,6 +7,7 @@ import {
   RESTPostOAuth2AccessTokenResult,
   Routes,
 } from 'discord-api-types/v10'
+import { AuthService } from './auth.service'
 
 const discordApi = axios.create({
   baseURL: 'https://discord.com/api/v10',
@@ -14,6 +15,8 @@ const discordApi = axios.create({
 
 @Controller('auth')
 export class AuthController {
+  constructor(private authService: AuthService) {}
+
   @Get('/login')
   async login(@Response() res: FastifyReply, @Query('code') code: string) {
     if (!code) {
@@ -48,11 +51,16 @@ export class AuthController {
 
     const accessToken = tokens.access_token
 
-    const { data: user } = await discordApi.get<APIUser>(Routes.user(), {
+    const { data: discordUser } = await discordApi.get<APIUser>(Routes.user(), {
       headers: {
         authorization: `Bearer ${accessToken}`,
       },
     })
+
+    const user = await this.authService.findOrCreateUser(
+      discordUser.id,
+      discordUser.username,
+    )
 
     console.log(user)
   }
