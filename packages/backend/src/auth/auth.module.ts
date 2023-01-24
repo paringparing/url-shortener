@@ -14,5 +14,6 @@ import { config } from 'src/utils/config'
   ],
   providers: [AuthService],
   controllers: [AuthController],
+  exports: [AuthService],
 })
 export class AuthModule {}
