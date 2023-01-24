@@ -2,7 +2,11 @@ import { Controller, Get, Query, Response } from '@nestjs/common'
 import { FastifyReply } from 'fastify'
 import { config } from 'src/utils/config'
 import axios from 'axios'
-import { RESTPostOAuth2AccessTokenResult, Routes } from 'discord-api-types/v10'
+import {
+  APIUser,
+  RESTPostOAuth2AccessTokenResult,
+  Routes,
+} from 'discord-api-types/v10'
 
 const discordApi = axios.create({
   baseURL: 'https://discord.com/api/v10',
@@ -43,5 +47,13 @@ export class AuthController {
       )
 
     const accessToken = tokens.access_token
+
+    const { data: user } = await discordApi.get<APIUser>(Routes.user(), {
+      headers: {
+        authorization: `Bearer ${accessToken}`,
+      },
+    })
+
+    console.log(user)
   }
 }
