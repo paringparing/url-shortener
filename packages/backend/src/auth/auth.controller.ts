@@ -21,7 +21,7 @@ export class AuthController {
   async login(@Response() res: FastifyReply, @Query('code') code: string) {
     if (!code) {
       res.redirect(
-        301,
+        302,
         `https://discord.com/api/oauth2/authorize?${new URLSearchParams({
           client_id: config.auth.discord.clientId,
           scope: 'identify',
@@ -62,6 +62,8 @@ export class AuthController {
       discordUser.username,
     )
 
-    console.log(user)
+    const token = await this.authService.createToken(user)
+
+    res.redirect(302, '/#/auth/callback?token=' + token)
   }
 }
