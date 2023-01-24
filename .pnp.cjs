@@ -365,10 +365,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "npm:3.4.0"\
       ],\
       [\
-        "@fastify/cookie",\
-        "npm:8.3.0"\
-      ],\
-      [\
         "@fastify/cors",\
         "npm:8.2.0"\
       ],\
@@ -391,10 +387,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       [\
         "@fastify/middie",\
         "npm:8.0.0"\
-      ],\
-      [\
-        "@fastify/session",\
-        "npm:10.1.1"\
       ],\
       [\
         "@fastify/static",\
@@ -4540,17 +4532,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["@fastify/cookie", [\
-        ["npm:8.3.0", {\
-          "packageLocation": "./.yarn/cache/@fastify-cookie-npm-8.3.0-d4b09e29b0-d5dfb5c85d.zip/node_modules/@fastify/cookie/",\
-          "packageDependencies": [\
-            ["@fastify/cookie", "npm:8.3.0"],\
-            ["cookie", "npm:0.5.0"],\
-            ["fastify-plugin", "npm:4.4.0"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["@fastify/cors", [\
         ["npm:8.2.0", {\
           "packageLocation": "./.yarn/cache/@fastify-cors-npm-8.2.0-46fdadf32d-b2e30602d3.zip/node_modules/@fastify/cors/",\
@@ -4609,17 +4590,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fastify-plugin", "npm:3.0.1"],\
             ["path-to-regexp", "npm:6.2.1"],\
             ["reusify", "npm:1.0.4"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
-      ["@fastify/session", [\
-        ["npm:10.1.1", {\
-          "packageLocation": "./.yarn/cache/@fastify-session-npm-10.1.1-e70b7f21f1-da2653b454.zip/node_modules/@fastify/session/",\
-          "packageDependencies": [\
-            ["@fastify/session", "npm:10.1.1"],\
-            ["fastify-plugin", "npm:4.4.0"],\
-            ["safe-stable-stringify", "npm:2.4.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7482,8 +7452,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["backend", "workspace:packages/backend"],\
             ["@edgedb/generate", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:0.0.6"],\
-            ["@fastify/cookie", "npm:8.3.0"],\
-            ["@fastify/session", "npm:10.1.1"],\
             ["@nestjs/cli", "npm:9.1.5"],\
             ["@nestjs/common", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:9.2.1"],\
             ["@nestjs/core", "virtual:aa59773ac87791c4813d53447077fcf8a847d6de5a301d34dc31286584b1dbb26d30d3adb5b4c41c1e8aea04371e926fda05c09c6253647c432e11d872a304ba#npm:9.2.1"],\
